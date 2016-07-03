@@ -1,56 +1,117 @@
-<!DOCTYPE html>
+g<!DOCTYPE html>
 <html>
 <head>
-  <title>CSGO General</title>
-  <link href="https://fonts.googleapis.com/css?family=Audiowide|Exo+2" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+  <title>Main Street Hair Company</title>
   <style>
-    body {
-      background: url(http://i.imgur.com/ikAicIp.png);
+    html {
+      font-family: 'Domine', serif;
+      background-image: url(http://i.imgur.com/C3sPwRt.png);
+      background-repeat: repeat-y;
+      background-repeat: repeat-x;
+      background-repeat: repeat;
     }
-    #container {
-      border-style: solid;
-      border-width: 1px 1px 1px 1px;
-      border-color: white;
-      background: url(http://i.imgur.com/tEXJcgL.png);
+    h1 {
+      padding: 5px 10px;
+      font-size: 250%;
+    }
+    h2{
+      text-decoration: underline;
+      text-align: center;
+      font-size: 125%;
+    }
+    h3 {
+      text-align: center;
+      font-size: 125%;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    li {
+      float: right;
+    }
+    li h3 {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 20px 12px;
+      text-decoration: none;
+    }
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 20px 12px;
+      text-decoration: none;
+    }
+    li a:hover {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 0;
+      background: transparent;
+      transition: width .5s ease, background-color .5s ease;
+      -webkit-transition: width .5s ease, background-color .5s ease;
+      -moz-transition: width .5s ease, background-color .5s ease;
+      margin:auto;
+    }
+    .activ {
+      color: white;
+    }
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1150px;
+    }
+    .home {
+      overflow: auto;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 3px;
+      padding: 10px;
+      background: rgba(200,200,200,0.9);
+    }
+    .center {
+      text-align: center;
       margin: auto;
-      width: 1200px;
     }
     #header {
-      font-family: 'Audiowide', cursive;
-      height: ;
-      width: 1200px;
+      overflow: auto;
+      width: 1100px;
+      height: 145px;
     }
-    #title {
+    #name {
+      height: 145px;
+      width: 400px;
       float: left;
+      overflow: hidden;
     }
     #nav {
       float: right;
-    }
-    #body {
-      font-family: 'Exo 2', sans-serif;
-      width: 1200px;
-    }
-    #footer {
-      height: ;
-      width: 1200px;
+      width: 650px;
+      height: 145px;
     }
   </style>
 </head>
 <body>
-  <div id="container">
-    <div id="header">
-      <div id="title">
-        <h1>CSGO General</h1>
+  <div class="container">
+    <div class="home">
+      <div id="header">
+        <div id="name">
+          <h1>CSGO General</h1>
+        </div>
+        <div id="nav">
+          <ul>
+            <li><a><h3>Loadouts</h3></a></li>
+            <li><a href="contact.html"><h3>Gambling</h3></a></li>
+            <li><a href="team.html"><h3>Skins</h3></a></li>
+            <li><a href="index.html"><h3 class="activ">General</h3></a></li>
+          </ul>
+        </div>
       </div>
-      <div id="nav">
-        <h3>NAVIGATION</h3>
-      </div>
-    </div>
-    <div id="body">
-      
-    </div>
-    <div id="footer">
-      
     </div>
   </div>
 </body>
